@@ -1,0 +1,5 @@
+docs/reference/*.pdf
+docs/*.md
+docs/reference/
+content-gaps.md
+snowflake-content-map.md

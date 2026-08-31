@@ -102,8 +102,8 @@ def build():
     y = H - 315
     for label, detail in [("INPUT", "Source media and episode context"), ("JUDGMENT", "AI-assisted hooks plus human review"), ("OUTCOME", "Published content, attribution, commission")]:
         y = bullet(c, label, detail, 42, y, 400) - 13
-    image(c, ASSETS / "campus-visual-system.jpg", 515, 115, 250, 300)
-    text(c, "A system shaped around the work, not a speculative demo.", 515, 92, 8, MUTED, "Helvetica-Oblique")
+    image(c, ROOT / "assets/dramaclips/screens/Screenshot_20260830_at_35552PM.jpg", 515, 115, 250, 300)
+    text(c, "Actual DramaClips Hook Studio interface.", 515, 92, 8, MUTED, "Helvetica-Oblique")
     c.showPage()
 
     # 4 system
@@ -126,8 +126,8 @@ def build():
     # 5 AI workflow
     c.setFillColor(BG); c.rect(0, 0, W, H, fill=1, stroke=0)
     title(c, "04 / applied AI", "AI as a collaborator in the editing loop.", 5)
-    image(c, ASSETS / "carlysle-mixed-use.jpg", 42, 105, 310, 300)
-    text(c, "The point is not a magic button.", 42, 82, 9, ACCENT, "Helvetica-Bold")
+    image(c, ROOT / "assets/dramaclips/screens/Screenshot_20260830_at_35634PM.jpg", 42, 105, 310, 300)
+    text(c, "Actual DramaClips human-review interface.", 42, 82, 9, ACCENT, "Helvetica-Bold")
     wrap(c, "The product uses AI to expand the set of possibilities - transcribing media, proposing hook candidates, and organizing signals for review - while keeping the final creative decision visible and human.", 410, H - 155, 330, 14, PAPER, "Helvetica", 21)
     y = H - 305
     for label, detail in [("GENERATE", "Create several candidate directions from the same source"), ("COMPARE", "Make tradeoffs legible through structured fields"), ("APPROVE", "Let a person decide what is ready to publish")]:
@@ -146,14 +146,16 @@ def build():
         text(c, label, 150, y - 2, 12, INK, "Helvetica-Bold")
         wrap(c, detail, 415, y - 2, 320, 10, colors.HexColor("#555951"), "Helvetica", 14)
         y -= 62
+    image(c, ROOT / "assets/dramaclips/screens/Screenshot_20260830_at_35735PM.jpg", 485, 92, 280, 170)
+    text(c, "Publish Center: one delivery workflow across four platforms.", 485, 77, 8, colors.HexColor("#73776E"), "Helvetica-Oblique")
     c.showPage()
 
     # 7 evidence
     c.setFillColor(BG); c.rect(0, 0, W, H, fill=1, stroke=0)
     title(c, "06 / evidence", "A portfolio built from shipped work and tested claims.", 7)
     wrap(c, "DramaClips is grounded in a real CPS / affiliate workflow using ReelShort content. The product has generated real affiliate commission. I do not claim unsupported revenue, conversion-rate, audience, or efficiency numbers.", 42, H - 155, 425, 15, PAPER, "Helvetica-Bold", 22)
-    image(c, ASSETS / "san-jose-career-education.jpg", 540, 125, 220, 290)
-    text(c, "Evidence discipline matters in applied AI.", 540, 102, 8, ACCENT, "Helvetica-Bold")
+    image(c, ROOT / "assets/dramaclips/screens/Screenshot_20260830_at_35739PM.jpg", 540, 125, 220, 290)
+    text(c, "Actual DramaClips publishing history.", 540, 102, 8, ACCENT, "Helvetica-Bold")
     text(c, "Selected adjacent work", 42, 165, 9, ACCENT, "Helvetica-Bold")
     wrap(c, "Computational design and visual systems work show the earlier side of the same practice: translating spatial, visual, and organizational complexity into clear rules and artifacts.", 42, 140, 425, 12, MUTED, "Helvetica", 18)
     c.showPage()

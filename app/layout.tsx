@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import "./mvp.css";
 
 export const metadata: Metadata = {
-  title: "Ruoya Li — Creative Technology",
-  description: "Software Engineer & Creative Technologist building applied AI tools and creative workflow systems.",
+  title: "Ruoya Li — Creative Technologist & Software Engineer",
+  description: "Creative technologist and software engineer building AI-powered tools, media workflows, and interactive systems.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

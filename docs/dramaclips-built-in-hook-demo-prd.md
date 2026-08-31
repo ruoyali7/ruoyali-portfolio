@@ -83,3 +83,21 @@ The demo uses representative values and explicitly labels them as simulated outp
 - The Built-in tab is visually primary; Vizard is secondary and explanatory.
 - No production credentials, private URLs, or real account details appear in the demo.
 - `npm run typecheck`, `npm run build`, and `git diff --check` pass.
+
+## 8. Selection explainer interaction
+
+The demo must show how a hook becomes a ranked candidate, not only the final result.
+
+### Visible sequence
+
+1. **Input:** selected episodes, creative direction, and prepared source metadata.
+2. **Transcription:** timestamped dialogue appears beside the processing log.
+3. **Segmentation:** a scene timeline shows boundaries and candidate windows.
+4. **Filtering funnel:** the count narrows from detected windows to dialogue-complete, direction-matched, visually viable, deduplicated candidates.
+5. **Scoring:** the selected candidate exposes weighted story and visual signals.
+6. **Comparison:** Candidate #1, #2, and #3 show score, hook type, and risk; a comparison note explains why the winner ranked higher.
+7. **Render QA:** the log shows vertical format, subtitles, cover frame, duration, and audio/video checks before review.
+
+### Prepared demo data
+
+The counts, transcript excerpt, score components, rejection reasons, and final clips are prepared artifacts derived from the production pipeline. The UI must label them as a prepared demonstration and must not imply that the public Vercel page is running Faster-Whisper or FFmpeg at request time.

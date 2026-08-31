@@ -135,7 +135,7 @@ Supporting line:
 
 Include minimal contact information:
 
-- personal website
+- Personal website: [dramaclips-portfolio.vercel.app](https://dramaclips-portfolio.vercel.app/)
 - LinkedIn
 - GitHub
 - email

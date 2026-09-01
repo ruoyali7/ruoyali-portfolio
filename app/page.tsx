@@ -2,7 +2,6 @@ import Image from "next/image";
 import Script from "next/script";
 import type { StaticImageData } from "next/image";
 import { DemoShell } from "../components/demo-shell";
-import { ProceduralObject } from "../components/procedural-object";
 import hookStudio from "../assets/dramaclips/screens/Screenshot_20260830_at_35552PM.jpg";
 import hookCandidate from "../assets/dramaclips/screens/Screenshot_20260830_at_35634PM.jpg";
 import publishCenter from "../assets/dramaclips/screens/Screenshot_20260830_at_35735PM.jpg";
@@ -44,7 +43,7 @@ export default function Home() {
   return <>
     <section className="intro-page">
       <header className="intro-nav"><span className="intro-logo">RL<span>.</span></span><span>SOFTWARE ENGINEER · CREATIVE TECHNOLOGIST</span><a href="#drama">Work</a><a href="#background">Background</a><a href="#about">About</a><a href="/ruoya-li-resume.pdf" target="_blank" rel="noreferrer">Resume ↗</a><a href="https://github.com/ruoyali7" target="_blank" rel="noreferrer">GitHub ↗</a></header>
-      <div className="intro-hero"><div><p className="eyebrow">Software Engineer &amp; Creative Technologist</p><h1>Production software<br/><em>for creative systems.</em></h1><p className="hero-support">I build production software, AI-assisted workflows, and tools for media, design, and 3D applications. My background spans software engineering, computational design, visualization, and digital fabrication.</p><div className="hero-actions"><a className="demo-cta" href="#drama">Explore flagship project <span>↓</span></a><a className="hero-text-link" href="/ruoya-li-resume.pdf" target="_blank" rel="noreferrer">Resume ↗</a></div></div><ProceduralObject /></div>
+      <div className="intro-hero"><div><p className="eyebrow">Software Engineer &amp; Creative Technologist</p><h1>Production software<br/><em>for creative systems.</em></h1><p className="hero-support">I build production software, AI-assisted workflows, and tools for media, design, and 3D applications. My background spans software engineering, computational design, visualization, and digital fabrication.</p><div className="hero-actions"><a className="demo-cta" href="#drama">Explore flagship project <span>↓</span></a><a className="hero-text-link" href="/ruoya-li-resume.pdf" target="_blank" rel="noreferrer">Resume ↗</a></div></div></div>
       <nav className="capability-strip" aria-label="Engineering capabilities"><a href="#architecture"><small>01</small><b>Production full-stack systems</b></a><a href="#architecture"><small>02</small><b>Async media workflows</b></a><a href="#interactive-demo"><small>03</small><b>Applied AI + human review</b></a><a href="#background"><small>04</small><b>3D + computational design</b></a></nav>
     </section>
 
